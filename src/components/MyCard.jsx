@@ -3,6 +3,16 @@ import { MdEmail, MdPhone } from "react-icons/md";
 import img from "../../public/digontha.png"
 import { Link } from "react-router-dom";
 const MyCard = () => {
+
+    const handleDownloadResumeClick = () => {
+        const resumePath = '../../public/digontha-web-development-resume-PH.pdf';
+        const link = document.createElement('a');
+        link.href = resumePath;
+        link.download = 'digontha-resume.pdf'; // Specify the desired filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <>
 
@@ -26,10 +36,10 @@ const MyCard = () => {
                 </div>
                 <div className="mb-5 px-4">
                     <button className="btn btn-outline text-white w-full">Hire Me</button>
-                    <button className="btn btn-outline text-white w-full mt-3">Download Resume <FaDownload></FaDownload></button>
+                    <button onClick={handleDownloadResumeClick} className="btn btn-outline text-white w-full mt-3">Download Resume <FaDownload></FaDownload></button>
                 </div>
                 <div className="flex justify-center items-center text-4xl my-5 gap-5">
-                <Link to="https://www.facebook.com/digontha.das.7" target="blank"> <FaFacebook className="cursor-pointer" /></Link>
+                    <Link to="https://www.facebook.com/digontha.das.7" target="blank"> <FaFacebook className="cursor-pointer" /></Link>
                     <Link to="linkedin.com/in/digontha-das-51480a2a3" target="blank"> <FaLinkedin className="cursor-pointer" /></Link>
                     <Link to="https://github.com/Digontha" target="blank"> <FaGithub className="cursor-pointer" /></Link>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import MyCard from '../components/MyCard';
 import MySkills from '../components/MySkills';
+import LatestProjects from '../components/LatestProjects';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
         </div>
 
         <MySkills></MySkills>
+        <LatestProjects></LatestProjects>
       </>
     );
 };

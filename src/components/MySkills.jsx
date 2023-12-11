@@ -10,7 +10,7 @@ const MySkills = () => {
                 <h1 className='text-2xl text-center font-mono font-semibold underline text-white mb-5'>My Skill</h1>
             </div>
             <div className='flex flex-col items-center justify-center my-8'>
-                <div className='flex gap-40'>
+                <div className='flex lg:flex-row flex-col lg:gap-40'>
                     <div className='border rounded-full p-10'>
                         <FaReact className='text-7xl text-white'></FaReact>
                         <p className='text-xl text-center text-white hover:underline cursor-pointer'>React js</p>
@@ -29,7 +29,7 @@ const MySkills = () => {
                         <p className='text-xl text-center text-white hover:underline cursor-pointer'>Node js</p>
                     </div>
                 </div>
-                <div className='flex gap-32 mt-10'>
+                <div className='flex lg:flex-row flex-col lg:gap-32 mt-10'>
                     <div className='border rounded-full p-10'>
                         <SiMongodb className='text-7xl text-white'></SiMongodb>
                         <p className='text-xl text-center text-white hover:underline cursor-pointer'>MongoDB</p>
