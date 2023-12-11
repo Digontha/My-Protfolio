@@ -1,4 +1,4 @@
-
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import img from "../../public/digontha.png"
 const MyCard = () => {
     return (
@@ -15,6 +15,11 @@ const MyCard = () => {
                 </div>
                 <div className="mb-5 px-4">
                     <button className="btn btn-outline text-white w-full">Hire Me</button>
+                </div>
+                <div className="flex justify-center items-center text-4xl my-5 gap-5">
+                <FaFacebook></FaFacebook>
+                <FaLinkedin />
+                <FaGithub />
                 </div>
             </div>
 
