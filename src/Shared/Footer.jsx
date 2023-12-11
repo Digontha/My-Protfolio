@@ -1,5 +1,5 @@
 import moment from 'moment';
-import React from 'react';
+
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
