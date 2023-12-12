@@ -1,4 +1,4 @@
-import { FaBook, FaCalendarTimes, FaCertificate, FaSchool,} from "react-icons/fa";
+import { FaBook, FaCalendarTimes, FaCertificate, FaLocationArrow, FaSchool, } from "react-icons/fa";
 import { SiCounterstrike } from "react-icons/si";
 
 
@@ -53,7 +53,17 @@ const About = () => {
                     <p className="flex items-center gap-3"><FaSchool></FaSchool>Moulvibazar Government Collage</p>
                     <p className="flex items-center gap-3"><FaBook></FaBook> Bachelor Of Science</p>
                     <p className="flex items-center gap-3"><FaCalendarTimes></FaCalendarTimes>2023-Present</p>
-                    
+
+                </div>
+
+
+            </div>
+
+            <div>
+                <h1 className='text-2xl text-center font-mono font-semibold underline text-white my-10'>Location</h1>
+
+                <div className="lg:text-xl text-sm  text-white font-mono flex justify-center items-center gap-9 my-10">
+                    <p className="flex items-center gap-3"><FaLocationArrow></FaLocationArrow> Bangladesh, Syhlet, Moulvibazar-3200</p>
                 </div>
             </div>
         </>
