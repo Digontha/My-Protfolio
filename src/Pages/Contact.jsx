@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import swal from "sweetalert";
 
 const Contact = () => {
     const form = useRef();
@@ -10,6 +11,7 @@ const Contact = () => {
       emailjs.sendForm('service_31nlyew', 'template_oissyni', form.current, 'r4Oo3Uac2lObtQXVx')
         .then((result) => {
             console.log(result.text);
+            swal("Send", "You Message send successfully", "success");
         }, (error) => {
             console.log(error.text);
         });
