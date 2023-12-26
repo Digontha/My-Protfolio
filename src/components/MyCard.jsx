@@ -4,15 +4,15 @@ import img from "../../public/digontha.png"
 import { Link } from "react-router-dom";
 const MyCard = () => {
 
-    const handleDownloadResumeClick = () => {
-        const resumePath = '../../public/digontha-web-development-resume-PH.pdf';
-        const link = document.createElement('a');
-        link.href = resumePath;
-        link.download = 'digontha-resume.pdf'; // Specify the desired filename
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    // const handleDownloadResumeClick = () => {
+    //     const resumePath = '../../public/digontha-web-development-resume-PH.pdf';
+    //     const link = document.createElement('a');
+    //     link.href = resumePath;
+    //     link.download = 'digontha-resume.pdf'; // Specify the desired filename
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
     return (
         <>
 
@@ -36,7 +36,9 @@ const MyCard = () => {
                 </div>
                 <div className="mb-5 px-4">
                     <button className="btn btn-outline text-white w-full">Hire Me</button>
-                    <button onClick={handleDownloadResumeClick} className="btn btn-outline text-white w-full mt-3">Download Resume <FaDownload></FaDownload></button>
+
+                    <a href="https://drive.google.com/uc?export=download&id=1yCPwSiDN2ZRauQBWvpZkrjoporgASj7V" download="Resume-of-digontha-das" className='btn btn-outline text-white w-full mt-3'> Download Resume<FaDownload className=''/></a>
+
                 </div>
                 <div className="flex justify-center items-center text-4xl my-5 gap-5">
                     <Link to="https://www.facebook.com/digontha.das.7" target="blank"> <FaFacebook className="cursor-pointer" /></Link>
