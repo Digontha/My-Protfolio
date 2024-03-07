@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import img1 from "../../public/project1.png"
 import img2 from "../../public/project2.png"
 import img3 from "../../public/project3.png"
+import img4 from "../../public/team-project.png"
 
 const LatestProjects = () => {
     return (
@@ -42,6 +43,18 @@ const LatestProjects = () => {
                         <div className="card-actions justify-end">
                             <Link to="https://assignment-10-7d2ff.web.app" target="blank"><button className="btn btn-primary btn-outline">Preview</button></Link>
                             <Link target="blank" to="https://github.com/Digontha/Gadget-bd-website-client"><button className="btn btn-primary btn-outline">Github Repo</button></Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card   bg-[#0E142D] shadow-xl p-5">
+                    <figure className="w-full h-60"><img src={img4} className="lg:w-[100%]" alt="Album" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">DomainHub</h2>
+                        <p>It's domain selling website. There are many types of domains will be available...</p>
+                        <div className="card-actions justify-end">
+                            <Link to="https://domain-hub-a81ae.web.app" target="blank"><button className="btn btn-primary btn-outline">Preview</button></Link>
+                            <Link target="blank" to="https://github.com/khansuhad/domain-hub"><button className="btn btn-primary btn-outline">Github Repo</button></Link>
                         </div>
                     </div>
                 </div>
